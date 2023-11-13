@@ -10,6 +10,7 @@ function BookingTable() {
   if (isLoading) return <Spinner />;
   if (errors) return <p>Something went wrong...</p>;
   if (!bookings.length) return <Empty resourceName={"bookings"} />;
+
   return (
     <Menus>
       <Table columns="0.6fr 2fr 2.4fr 1.4fr 1fr 3.2rem">
@@ -29,7 +30,7 @@ function BookingTable() {
           )}
         />
         <Table.Footer>
-          <Pagination count = {count} />
+          <Pagination count={count} />
         </Table.Footer>
       </Table>
     </Menus>
