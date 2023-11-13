@@ -16,6 +16,7 @@ function UpdateSettingsForm() {
       breakfastPrice,
     } = {},
   } = useSettings();
+
   const { isUpdating, updateSetting } = useUpdateSetting();
   if (isLoading) return <Spinner />;
   function handleUpdate(e, field) {
